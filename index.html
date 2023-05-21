@@ -8,23 +8,54 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="grid-container">
+    <nav class="navbar">
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#basic" class="nav-item">Base Grid</a>
+        <a href="#template" class="nav-item">Template Areas</a>
+        <a href="#responsive" class="nav-item">Responsive Grid</a>
+        <a href="#nested" class="nav-item">Nested Grid</a>
+      </nav>
+      
+    <div class="grid-container" id="home">
         <header class="header">
             <h1>Learning CSS Grid</h1>
             <p>Scroll down to see different applications of CSS Grid.</p>
         </header>
 
-        <section class="content-grid-basic">
+        <section class="content-grid-basic" id="basic">
             <h2>Basic Grid</h2>
             <p>Grid makes it easy to create a basic layout with rows and columns.</p>
             <div class="grid-basic">
-                <div class="item">1</div>
-                <div class="item">2</div>
-                <div class="item">3</div>
+                <div class="item">
+                    <h3>List 1</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                    
+
+                </div>
+                <div class="item">
+                    <h3>List 2</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>List 3</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section class="content-grid-template">
+        <section class="content-grid-template" id="template">
             <h2>Grid Template Areas</h2>
             <p>Template areas let you name parts of the grid layout.</p>
             <div class="grid-template">
@@ -35,7 +66,7 @@
             </div>
         </section>
 
-        <section class="content-grid-responsive">
+        <section class="content-grid-responsive" id="responsive">
             <h2>Responsive Grid</h2>
             <p>With auto-fit and minmax(), you can make grids that adapt to screen size.</p>
             <div class="grid-responsive">
@@ -47,17 +78,31 @@
             </div>
         </section>
 
-        <section class="content-grid-nested">
+        <section class="content-grid-nested" id="nested">
             <h2>Nested Grid</h2>
             <p>Grids can be nested inside grid items for complex layouts.</p>
             <div class="grid-nested">
                 <div class="item">
-                    <div>1.1</div>
-                    <div>1.2</div>
+                    <div>
+                        <h4>1.1</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div>
+                        <h4>1.2</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore unde placeat ad quasi quibusdam.</p>
+                    </div>
                 </div>
                 <div class="item">
-                    <div>2.1</div>
-                    <div>2.2</div>
+                    <div>
+                        <h4>To-Do:</h4>
+                        <ol>
+                            <li>Learn CSS Grid</li>
+                        </ol>
+                    </div>
+                    <div>
+                       <h4>Next:</h4>
+                       <ol><li>Learn Flexbox</li></ol>
+                    </div>
                 </div>
             </div>
         </section>
