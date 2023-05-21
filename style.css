@@ -1,0 +1,98 @@
+:root {
+    --background-color: #f0f8ff;
+    --section: #b3cee5;
+    --header: #005A9C;
+    --item: #f8f9fa;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.header, .footer {
+    background-color: var(--header);
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    background-color: var(--section);
+    padding: 20px;
+}
+
+/* Styles for different grid examples */
+.grid-basic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-basic .item {
+    background-color: var(--item);
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-template {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav content content"
+        "nav footer footer";
+    grid-gap: 10px;
+}
+
+.grid-template .header {
+    grid-area: header;
+}
+
+.grid-template .nav {
+    grid-area: nav;
+}
+
+.grid-template .content {
+    grid-area: content;
+}
+
+.grid-template .footer {
+    grid-area: footer;
+}
+
+.grid-template .item {
+    background-color: var(--item);
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-responsive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.grid-responsive .item {
+    background-color: var(--item);
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-nested {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.grid-nested .item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    background-color: var(--item);
+    padding: 20px;
+    text-align: center;
+}

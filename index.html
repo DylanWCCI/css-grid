@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS Grid</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <h1>Learning CSS Grid</h1>
+            <p>Scroll down to see different applications of CSS Grid.</p>
+        </header>
+
+        <section class="content-grid-basic">
+            <h2>Basic Grid</h2>
+            <p>Grid makes it easy to create a basic layout with rows and columns.</p>
+            <div class="grid-basic">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+        </section>
+
+        <section class="content-grid-template">
+            <h2>Grid Template Areas</h2>
+            <p>Template areas let you name parts of the grid layout.</p>
+            <div class="grid-template">
+                <div class="item header">Header</div>
+                <div class="item nav">Nav</div>
+                <div class="item content">Content</div>
+                <div class="item footer">Footer</div>
+            </div>
+        </section>
+
+        <section class="content-grid-responsive">
+            <h2>Responsive Grid</h2>
+            <p>With auto-fit and minmax(), you can make grids that adapt to screen size.</p>
+            <div class="grid-responsive">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+            </div>
+        </section>
+
+        <section class="content-grid-nested">
+            <h2>Nested Grid</h2>
+            <p>Grids can be nested inside grid items for complex layouts.</p>
+            <div class="grid-nested">
+                <div class="item">
+                    <div>1.1</div>
+                    <div>1.2</div>
+                </div>
+                <div class="item">
+                    <div>2.1</div>
+                    <div>2.2</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2023 Learning CSS Grid</p>
+        </footer>
+    </div>
+</body>
+</html>
